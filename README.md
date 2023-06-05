@@ -12,7 +12,7 @@
 <div align="center">
   
   <br/>
-<h1 align="center">Math Magicians</h1>
+<h1 align="center">React to-do app</h1>
 </div>
 
 
@@ -24,17 +24,16 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Math Magicians\] ](#-math-magicians-)
+- [📖 \[React to-do app\] ](#-react-to-do-app-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-   - [🚀 Live Demo](#live-demo)
- - [💻 Getting Started ](#-getting-started-)
-   - [Prerequisites](#prerequisites)
-   - [Setup](#setup)
-   - [Install](#install)
-   - [Usage](#usage)
-   - [Run tests](#run-tests)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
   - [👥 Author ](#-author-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -44,15 +43,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Math Magicians] <a name="about-project"></a>
+# 📖 [React to-do app] <a name="about-project"></a>
 
 
-**Math magicians** is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
-
-- Make simple calculations.
-- Read a random quote.
-
-By building this application, I improve my skills in using React.
+**React to-do app** is a task management application that allows users to create, organize, and track their tasks. Users can add, complete, and delete tasks, providing an efficient and user-friendly experience. React's component-based architecture ensures a responsive interface, making it easy to manage daily tasks and boost productivity.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -92,12 +86,12 @@ By building this application, I improve my skills in using React.
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+<!-- ## 🚀 Live Demo <a name="live-demo"></a>
 
 
 - [Live Demo Link](https://salimer.github.io/Math-magicians/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 <!-- GETTING STARTED -->
@@ -123,14 +117,14 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/Salimer/Math-magicians.git
+  git clone https://github.com/Salimer/react-to-do-list.git
 ```
 
 using Ubuntu:
 
 ```sh
   cd my-desired-folder
-  git clone https://github.com/Salimer/Math-magicians.git
+  git clone https://github.com/Salimer/react-to-do-list.git
 ```
 
 For more information on how to clone or fork a repository:
