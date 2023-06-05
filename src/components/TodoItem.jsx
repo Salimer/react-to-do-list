@@ -2,10 +2,10 @@ import { useState, useRef } from 'react';
 import styles from '@/styles/TodoItem.module.css';
 import { FaTrash } from "react-icons/fa";
 import { AiFillEdit } from "react-icons/ai";
+import PropTypes from 'prop-types';
 
 const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate }) => {
     const editInputRef = useRef(null);
-    // const [updateInput, setUpdateInput] = useState(itemProp.title);
     const [editing, setEditing] = useState(false);
     const completedStyle = {
         fontStyle: 'italic',
@@ -51,14 +51,18 @@ const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate }) => {
       type="text"
       ref={editInputRef}
         defaultValue={itemProp.title}
-    //   value={updateInput}
       className={styles.textInput}
       style={editMode}
-    //   onChange={(e) => setUpdateInput(e.target.value)}
       onKeyDown={handleUpdatedDone}
     />
         </li>
       );
   };
+  TodoItem.propTypes = {
+    itemProp: PropTypes.object.isRequired,
+    setUpdate: PropTypes.func.isRequired,
+    delTodo: PropTypes.func.isRequired,
+    handleChange: PropTypes.func.isRequired
+  }
   export default TodoItem;
   
