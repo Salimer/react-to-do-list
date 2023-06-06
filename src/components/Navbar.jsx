@@ -1,5 +1,12 @@
 import { useState, useRef, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
+const links = [
+  { path: '/', text: 'Home' },
+  { path: 'about', text: 'About' },
+  { path: 'profile', text: 'Profile' },
+  { path: 'login', text: 'Login' },
+];
 const Navbar = () => {
     const [dropdown, setDropdown] = useState(false);
 
@@ -19,22 +26,16 @@ const Navbar = () => {
         };
   }, [dropdown]);
     return (
-      <nav>
+      <nav className="navbar">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li ref={ref}>
-            <button onClick={() => setDropdown((prev) => !prev)}>
-              Services <span>&#8595;</span>
-            </button>
-            {dropdown && (
-            <ul>
-              <li>Design</li>
-              <li>Development</li>
-            </ul>
-            )} 
+        {links.map((link) => {
+        return (
+          <li key={link.text}>
+            <NavLink to={link.path}>{link.text}</NavLink>
           </li>
-        </ul>
+        );
+      })}
+    </ul>
       </nav>
     );
   };

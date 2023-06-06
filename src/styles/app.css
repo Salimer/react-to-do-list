@@ -116,3 +116,12 @@ li > ul {
   background-color: #fff;
   border-radius: 0 0 4px 4px;
 }
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+/* Active route */
+.active {
+  color: #005bb3;
+}
